@@ -1,6 +1,4 @@
-* {
-  outline: red 1px solid;
-}
+
 
 body {
 	background-color: black;
@@ -51,7 +49,7 @@ body {
   background-image: url('../images/hadouken.gif');
   width: 156px; 
   height: 90px;
-  /*display: none;*/
+  display: none;
   position: absolute;
   z-index: 10;
   top: 177px;
