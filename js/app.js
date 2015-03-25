@@ -18,13 +18,39 @@ $(document).ready(function() {
     		$(this).css('left', '600px');
     	}
     	);
-    // show hadouken and animate it to the right of the screen
   })
   .mouseup(function() {
     $('.ryu-throwing').hide();
     $('.ryu-ready').show();
-    // ryu goes back to his ready position
   });
+
+  $('body').on('keydown keyup',function(e){
+      var show = e.type=="keydown" ? 'show' : 'hide' ;
+      if(e.which==88){
+          $(this).css(
+          	$('.ryu-ready').hide();
+  			$('.ryu-still').hide();
+			$('.ryu-cool').show(););  
+      }
+    });
+
+  /*$('body').keydown(function() {
+  	//console.log('keydown');
+  	$('.ryu-ready').hide();
+  	$('.ryu-still').hide();
+	$('.ryu-cool').show();
+  	//hide other ryus on keydown
+  	//show ryu cool on keydown
+  	//show ryu cool on keydown id=88
+  })
+  	$('body').keyup(function() {
+  	//console.log('keydown');
+  	$('.ryu-ready').hide();
+  	$('.ryu-still').show();
+	$('.ryu-cool').hide();
+  });
+*/
+
 });
 
 
