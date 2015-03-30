@@ -27,6 +27,7 @@ $(document).ready(function() {
   .mouseup(function() {
     $('.ryu-throwing').hide();
     $('.ryu-ready').show();
+    $('.ryu-cool').hide();
   });
 
   $('body').keydown(function(event) {
